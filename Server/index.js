@@ -10,7 +10,7 @@ const { allowedUrl } = require('./config');
 const api = require("./api/api");
 app.use(cors({origin:allowedUrl}));
 app.use(express.json());
-const server = data.Server;
+ 
 app.use("/api" , api);
  
 app.listen(ports , ()=>{
