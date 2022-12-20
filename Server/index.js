@@ -2,15 +2,13 @@ const fetch = require('node-fetch');
 const express = require('express')
 const app = express();
 const cors = require('cors');
-const Axios = require('axios');
  
-const ports = 3002;
+const ports = 8080;
 const Pool = require('pg').Pool
 const data = require('./config');
-const { popoverClasses } = require('@mui/material');
- 
- 
-app.use(cors());
+const { allowedUrl } = require('./config');
+
+app.use(cors({origin:allowedUrl}));
 app.use(express.json());
 const server = data.Server;
 
@@ -230,7 +228,7 @@ app.post("/User/addToCart" ,async(req , res)=> {
     console.log(err)
   }
 })
-
+module.exports = app;
 
 
  

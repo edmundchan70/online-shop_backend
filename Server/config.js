@@ -4,13 +4,18 @@ const loginData= {
     username: "edmundchan"
     
 }
+
 module.exports = {
+     allowedUrl :["https://chat-system-beryl.vercel.app/",
+"http://localhost:3000"
+],
     ps5_pic :"https://twinfinite.net/2020/06/ps5-official-pictures/ps5-4-2/",
      title : "PS5",
      price :150 ,
      rating:5,
      Server:"http://localhost:3002"
-}
+};
+
 
 /*
  Create table product( 

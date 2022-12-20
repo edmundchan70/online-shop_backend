@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "name": "api",
     "builds": [
       {
         "src": "index.js",
