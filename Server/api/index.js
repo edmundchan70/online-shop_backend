@@ -5,8 +5,8 @@ const cors = require('cors');
  
 const ports = 8080;
 const Pool = require('pg').Pool
-const data = require('./config');
-const { allowedUrl } = require('./config');
+const data = require('../config');
+const { allowedUrl } = require('../config');
 
 app.use(cors({origin:allowedUrl}));
 app.use(express.json());
